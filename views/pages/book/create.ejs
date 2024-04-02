@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tambah Buku</title>
+</head>
+<body>
+    <%- include('../../component/navbar') %>
+    <h1 style="text-align: center;">Tambah Buku</h1>
+    <form action="/books" method="post">
+        <input placeholder="Masukkan nama buku" name="name" />
+        <input placeholder="Masukkan email buku" name="email" />
+        <button type="submit">Submit</button>
+    </form>
+    <footer>
+        <p>&copy; 2024 Express JS</p>
+    </footer>
+</body> 
+</html>

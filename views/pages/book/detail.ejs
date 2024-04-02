@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Books</title>
+</head>
+<body>
+    <%- include('../../component/navbar') %>
+    <a href="/Books/create">Tambah Buku</a>
+    <h3>Detail Buku</h3>
+    <div>
+        <% console.log(data) %>
+        <% if(data) { %>
+            <% const {name, email} = data %>
+            <p>Nama Buku : <%=name %></p>
+            <p>Email : <%=email %></p>
+        <% } else { %>
+            <h3>Data tidak ditemukan</h3>
+       <% } %>
+    </div>
+    <footer>
+        <p>&copy; 2024 Express JS</p>
+    </footer>
+</body>
+</html>

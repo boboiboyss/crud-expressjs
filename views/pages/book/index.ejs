@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Books</title>
+</head>
+<body>
+    <%- include('../../component/navbar') %>
+    <a href="/Books/create">Tambah Buku</a>
+    <h1>Daftar Buku</h1>
+    <ul>
+        <% if(books.length > 0) { %>
+            <% books.forEach((book) => { %>
+                <li><a href="/Books/<%=book.id%>"><%=book.name %></a></li>
+            <% }) %>
+        <% } else { %>
+                <p>Data Buku Masih Kosong</p>
+        <% } %>
+    </ul>
+    <footer>
+        <p>&copy; 2024 Express JS</p>
+    </footer>
+</body>
+</html>
